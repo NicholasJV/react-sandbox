@@ -1,0 +1,163 @@
+/*@import './image/P1010306-grey-wall.JPG';*/
+
+body, html {
+  margin: 0 !important;
+  background-color: #797F8C /* #8A8D9D /* #0D84FA; /* $deepBlueSky */
+}
+
+/*.content-container {
+  margin: 0px 20px;
+}*/
+
+.header-container {
+  /*margin-bottom: 200px;*/
+  margin: 0px 40px;
+  margin-bottom: 100vh;
+}
+
+.header {
+  margin: auto;
+  margin-top: 100px;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.me {
+  margin: auto;
+  margin-top: 40px;
+  z-index: 10;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  /*font-family: 'Arsenal', sans-serif;*/
+  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Overpass Mono', monospace;*/
+  /*font-family: 'Oswald', sans-serif;*/
+  /*font-family: 'Rubik', sans-serif; */
+  /*font-family: 'Archivo Black', sans-serif; */
+  /*font-family: 'Alfa Slab One', cursive; */
+/**
+ * FAVES:
+ */
+ /*font-family: 'Fira Sans Extra Condensed', sans-serif;*/
+  /*font-family: 'Slabo 27px', serif;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-style: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.me:hover {
+  text-shadow: 1px 1px 5px blue
+}
+
+.flat-title {
+  font-size: 5rem;
+}
+
+.dev-symbol {
+  font-size: 5rem;
+  font-family: 'Slabo 27px', serif;
+  font-family: 'Overpass Mono', monospace;
+  font-family: 'Rubik', sans-serif;
+}
+
+.dev-title {
+  font-family: 'Overpass Mono', monospace;
+}
+
+.spacer {
+  display: block;
+  height: 200px;
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*border: 3px dashed red;*/
+}
+
+.background-image {
+  height: 200vh;
+}
+
+.nav-links {
+  /*border: 1px dashed red;*/
+  z-index: 20px;
+  margin: auto 40px;
+  /*float: center;*/
+  text-align: center;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.icon-link {
+  margin: auto;
+  font-size: 5rem;
+}
+
+.link:hover {
+  text-shadow: 2px 5px 1px orange;
+}
+
+.link {
+  margin: 20px 50px;
+}
+
+.section {
+  border: 2px dotted purple;
+  display: block;
+  height: 60vh;
+  margin: 40px;
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 3px
+}
+
+.section-title {
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  color: black;
+}
+
+
+
+@media only screen (max-device-width:600px){
+  /*body {
+    background-color: red;
+  }*/
+  .flat {
+    font-size: 2rem;
+  }
+  font-size: 2rem;
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
