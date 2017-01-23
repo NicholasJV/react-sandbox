@@ -4,6 +4,9 @@ import { Parallax, Background } from 'react-parallax'
 import FontAwesome from 'react-fontawesome'
 
 export default class CityParallax extends Component {
+
+  
+
   render() {
     return (
       <div className="App">
@@ -30,7 +33,7 @@ export default class CityParallax extends Component {
                 role="presentation"/>
             </Background>
             <div className="section overlay">
-                <i className="fa fa-github"></i>
+              <h4 className="about"><strong> ABOUT </strong></h4>
             </div>
           </Parallax>
         {/* </div> */}

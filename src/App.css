@@ -2,7 +2,8 @@
 
 body, html {
   margin: 0 !important;
-  background-color: #797F8C /* #8A8D9D /* #0D84FA; /* $deepBlueSky */
+  background-color: #797F8C; /* #8A8D9D /* #0D84FA; /* $deepBlueSky */
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /*.content-container {
@@ -12,7 +13,7 @@ body, html {
 .header-container {
   /*margin-bottom: 200px;*/
   margin: 0px 40px;
-  margin-bottom: 100vh;
+  margin-bottom: 92vh;
 }
 
 .header {
@@ -28,8 +29,10 @@ body, html {
 }
 
 .me {
+  display: inline-block;
   margin: auto;
   margin-top: 40px;
+  padding: 0px 60px;
   z-index: 10;
   color: white;
   font-family: 'Libre Franklin', sans-serif;
@@ -47,7 +50,7 @@ body, html {
   /*font-family: 'Slabo 27px', serif;*/
   /*font-family: 'Montserrat', sans-serif;*/
   font-style: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -84,9 +87,8 @@ body, html {
 
 .nav-links {
   /*border: 1px dashed red;*/
-  z-index: 20px;
+  z-index: 20;
   margin: auto 40px;
-  /*float: center;*/
   text-align: center;
   display: flex;
   -ms-align-items: center;
@@ -103,36 +105,59 @@ body, html {
 }
 
 .link {
-  margin: 20px 50px;
+  margin: 20px 40px;
 }
 
 .section {
-  border: 2px dotted purple;
+  /*border: 2px dotted purple;*/
   display: block;
-  height: 60vh;
-  margin: 40px;
+  height: 45vh;
+  margin: 40px 40px 0px 40px;
   background-color: white;
   opacity: 0.5;
   border-radius: 3px
 }
 
-.section-title {
-  text-align: center;
+.about {
   margin: 0px;
-  padding: 20px;
+  padding: 12px;
   color: black;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Overpass Mono', monospace;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Alfa Slab One', cursive;
+/**
+ * FAVES:
+ */
+  font-family: 'Archivo Black', sans-serif;
+  /*font-family: 'Fira Sans Extra Condensed', sans-serif;*/
+  /*font-family: 'Slabo 27px', serif;*/
+  /*font-family: 'Montserrat', sans-serif;*/
 }
 
 
 
-@media only screen (max-device-width:600px){
+@media (max-width: 600px), (max-height: 760px) {
   /*body {
     background-color: red;
   }*/
-  .flat {
-    font-size: 2rem;
+  .header {
+    margin-top: 20px;
   }
-  font-size: 2rem;
+
+  .link {
+    margin: 20px 20px;
+  }
+  .flat-title {
+    font-size: 3rem;
+  }
+
+  .section {
+    margin: 0px;
+  }
+
+  /*font-size: 2rem;*/
 }
 
 
