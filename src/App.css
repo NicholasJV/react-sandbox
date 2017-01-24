@@ -9,214 +9,13 @@ li {
   list-style: none;
 }
 
-.header-container {
-  margin: 0px 40px;
-  margin-bottom: calc(100vh - 40px);
-}
-
-.header {
-  margin: auto;
-  margin-top: 100px;
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-}
-
-.me {
-  display: inline-block;
-  margin: auto;
-  margin-top: 40px;
-  padding: 0px 60px;
-  /*z-index: 10;*/
-  color: white;
-  font-family: 'Libre Franklin', sans-serif;
-  /*font-family: 'Arsenal', sans-serif;*/
-  font-family: 'Roboto Condensed', sans-serif;
-  font-style: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.me:hover {
-  text-shadow: 1px 1px 5px blue
-}
-
-.flat-title {
-  font-size: 5rem;
-}
-
-.background-image {
-  height: 200vh;
-}
-
-.link-container {
-  /*border: 1px dashed red;*/
-  margin: auto 40px;
-  text-align: center;
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-}
-
-.icon-link-heading {
-  margin: auto;
-  font-size: 5rem;
-}
-
-.link:hover {
-  text-shadow: 2px 5px 1px orange;
-}
-
-.link {
-  margin: 20px 40px;
-}
-
-/* software developer */
-.dev-symbol {
-  font-size: 5rem;
-  /**
-   * Font options:
-   */
-  /*font-family: 'Slabo 27px', serif;*/
-  /*font-family: 'Overpass Mono', monospace;*/
-  font-family: 'Rubik', sans-serif;
-}
-
-.dev-title {
-  margin: 2px;
-  font-family: 'Overpass Mono', monospace;
-}
-
-
-
-/****************
- * ABOUT POP-UP
- ****************/
-
-.abt-section {
-  border: 0px dashed red;
-  height: 45vh;
-  padding: 0px 20px;
-  margin: 40px auto 0px auto;
-  background-color: rgba(255,255,255,0.2);
-  border-radius: 2px;
-  max-width: 1200px;
-  text-align: center;
-}
-
-.abt-title {
-  border: 0px dashed red;
-  /*margin: 0px;*/
-  padding: 12px;
-  color: black;
-  font-family: 'Rubik', sans-serif;
-  letter-spacing: 0.5px;
-}
-
-.bs-row {
-  /*box-shadow: 1px 1px 1px blue;*/
-  text-align: center;
-  display: flex;
-  /*justify-content: center;*/
-}
-
-.abt-col {
-  border: 0px dotted red;
-  border-radius: 3px;
-  background-color: rgba(225, 226, 234,1);
-  text-align: left;
-  padding: 20px; /* 0px 10px */;
-  margin: 0px auto; /* 0px 10px */;
-  font-family: 'Roboto Condensed';
-  font-size: 1.75rem;
-  height: 35vh;
-  width: 45%;
-}
-
-.abt-col-title {
-  letter-spacing: 0.5px;
-  font-style: bold;
-  padding-left: 5px;
-  font-size: 2rem;
-  font-family: 'Archivo Black', sans-serif;
-  font-family: 'Roboto Condensed';
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.portrait-icon {
-  border: 0px dashed red;
-  opacity: 1;
-  float:left;
-  padding: 10px;
-}
-
 /**
- *
+ * FLAT PARALLAX:
  */
 
-@media (max-width: 777px), (max-height: 760px) {
-  .header {
-    margin-top: 20px;
-  }
-
-  .bs-row {
-    flex-direction: column;
-  }
-
-  .abt-col {
-    width: 90%;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    height: 45%;
-  }
-
-  .link {
-    margin: 20px 20px;
-  }
-
-  .flat-title {
-    font-size: 3rem;
-  }
-
-  .icon-link-heading {
-    font-size: 4rem;
-  }
-
-  .dev-title {
-    font-size: 2rem;
-  }
-
-  .abt-section {
-    height: 100%;
-    /*overflow: scroll;*/
-  }
-
-  /*font-size: 2rem;*/
-}
-
-@media (max-height: 580px) {
-  .dev-title {
-    display: none;
-  }
-}
-
-@media (max-height: 480px) {
-  .dev-symbol {
-    display: none;
-  }
-}
-
-
-
-/**
+/************************
  * REACT-APP boilerplate
- */
+ ************************/
 
 .App {
   text-align: center;
@@ -244,9 +43,9 @@ li {
 }
 
 
-/**
+/******************************
  * Fonts imported from Google:
- */
+ ******************************/
 
   /*font-family: 'Overpass Mono', monospace;*/
   /*font-family: 'Oswald', sans-serif;*/

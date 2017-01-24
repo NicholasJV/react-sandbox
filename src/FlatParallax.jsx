@@ -4,6 +4,7 @@ import portraitIconMD from './image/nv-mugshot-circle-icon100px-dither.png'
 import { Parallax, Background } from 'react-parallax'
 import { Grid, Row, Col } from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
+import './FlatParallax.css'
 
 export default class CityParallax extends Component {
 
@@ -33,21 +34,26 @@ export default class CityParallax extends Component {
                 role="presentation"/>
             </Background>
             <div className="abt-section">
-              <h4 className="abt-title"><strong> ABOUT </strong></h4>
+              <h4 className="abt-title abt-text">
+                <FontAwesome name="angle-double-down"/>
+                  <strong> ABOUT </strong>
+                <FontAwesome name="angle-double-down"/>
+              </h4>
               {/* <div className="row-wrapper"> */}
                 <Row className="bs-row">
                   <Col className="left-info abt-col" xs={12} sm={12} md={6}>
                     <img src={portraitIconMD} className="portrait-icon" alt=""/>
+                    <hr/>
                     <p><strong className="abt-col-title"> Hi! </strong>
                     I'm Nick and I'm a software developer. </p>
                     <p>With a background in engineering and video production,
                     I am a versatile creator and determined problem-solver in all things media.</p>
                     <p>I love building interesting user interfaces from sleek, minimal web applications to rich new media experiences. </p>
-                    {/* <hr/> */}
+                    <hr/>
                   </Col>
                   <Col className="skills abt-col" xs={12} sm={12} md={6}>
                     <strong className="abt-col-title">CURRENT SKILLS:</strong>
-                    {/* <hr/> */}
+                    <hr/>
                     <ul className="skills-list">
                       <li>Javascript/ES6</li>
                       <li>HTML5</li>
@@ -56,8 +62,6 @@ export default class CityParallax extends Component {
                       <li>Angular</li>
                       <li>Git & github</li>
                       <li>Node.js</li>
-                      <li></li>
-                      <li></li>
                       <li></li>
                     </ul>
                     <hr/>
