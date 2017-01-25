@@ -16,14 +16,15 @@ export default class FlatParallax extends Component {
   }
 
   toggleScroll() {
-    console.log('toggle function hit')
+    var vh = window.innerHeight
+    console.log('toggle function hit, direction:', this.state.atBottom, ' window height:', vh)
     if(this.state.atBottom) {
       window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
     // } else if (window.innerHeight < SET THIS MEDIA BREAKPOINT) {
     //   // scroll only partway
     } else {
       // document.querySelector('.page-top').scrollIntoView({behavior: 'smooth'})
-      window.scrollTo({top: 2000, left: 0, behavior: 'smooth'})
+      window.scrollTo({top: vh, left: 0, behavior: 'smooth'})
     }
     this.setState({ atBottom: !this.state.atBottom })
   }
