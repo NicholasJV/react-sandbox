@@ -9,9 +9,10 @@ li {
   list-style: none;
 }
 
-/**
- * FLAT PARALLAX:
- */
+.page-bottom, .page-top {
+  height: 1px;
+  display: none;
+}
 
 /************************
  * REACT-APP boilerplate

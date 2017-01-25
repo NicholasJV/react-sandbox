@@ -2,15 +2,36 @@ import React, { Component } from 'react'
 import greyWall from './image/P1010306-grey-wall.JPG'
 import portraitIconMD from './image/nv-mugshot-circle-icon100px-dither.png'
 import { Parallax, Background } from 'react-parallax'
-import { Grid, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
 import './FlatParallax.css'
+import smoothScroll from '../bower_components/smoothscroll/dist/smoothscroll'
 
-export default class CityParallax extends Component {
+export default class FlatParallax extends Component {
+  constructor(){
+    super()
+    this.state = ({ atBottom: false })
+    this.toggleScroll = this.toggleScroll.bind(this)
+    smoothScroll.polyfill()
+  }
+
+  toggleScroll() {
+    console.log('toggle function hit')
+    if(this.state.atBottom) {
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+    // } else if (window.innerHeight < SET THIS MEDIA BREAKPOINT) {
+    //   // scroll only partway
+    } else {
+      // document.querySelector('.page-top').scrollIntoView({behavior: 'smooth'})
+      window.scrollTo({top: 2000, left: 0, behavior: 'smooth'})
+    }
+    this.setState({ atBottom: !this.state.atBottom })
+  }
 
   render() {
     return (
       <div className="App">
+        <div className="page-top"></div>
         {/* <div className="container"> */}
           <Parallax strength={300} blur={50}>
             <div className="header-container">
@@ -34,9 +55,9 @@ export default class CityParallax extends Component {
                 role="presentation"/>
             </Background>
             <div className="abt-section">
-              <h4 className="abt-title abt-text">
+              <h4 className="abt-title abt-text" onClick={this.toggleScroll}>
                 <FontAwesome name="angle-double-down"/>
-                  <strong> ABOUT </strong>
+                  <strong onClick={this.toggleScroll}> ABOUT </strong>
                 <FontAwesome name="angle-double-down"/>
               </h4>
               {/* <div className="row-wrapper"> */}
@@ -71,6 +92,7 @@ export default class CityParallax extends Component {
             </div>
           </Parallax>
         {/* </div> */}
+        <div className="page-bottom"></div>
       </div>
     );
   }

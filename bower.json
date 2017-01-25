@@ -1,0 +1,20 @@
+{
+  "name": "sandbox",
+  "description": "react sketch sandbox",
+  "main": "src/App.js",
+  "authors": [
+    "Nicholas VanVoorthuysen <nicholas.vanvoorthuysen@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/NicholasJV/react-sandbox",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "smoothscroll": "^0.3.4"
+  }
+}
