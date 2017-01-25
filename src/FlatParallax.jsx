@@ -5,7 +5,7 @@ import { Parallax, Background } from 'react-parallax'
 import { Row, Col } from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
 import './FlatParallax.css'
-import smoothScroll from '../bower_components/smoothscroll/dist/smoothscroll'
+import smoothScroll from 'smoothscroll-polyfill'
 
 export default class FlatParallax extends Component {
   constructor(){
