@@ -2,11 +2,12 @@
 .header-container {
   margin: 0px 40px;
   margin-bottom: calc(100vh - 40px);
+  /*  40px so the 'ABOUT' title section shows   */
 }
 
 .header {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 20vh;
   position: fixed;
   top: 0;
   right: 0;
@@ -15,7 +16,7 @@
   height: 200px;
 }
 
-.me {
+.me-title {
   display: inline-block;
   margin: auto;
   margin-top: 40px;
@@ -27,14 +28,11 @@
   font-style: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-.me:hover {
-  text-shadow: 1px 1px 5px blue
-}
-
-.flat-title {
   font-size: 5rem;
+}
+
+.me-title:hover {
+  text-shadow: 1px 1px 5px blue
 }
 
 .background-image {
@@ -46,6 +44,7 @@
   margin: auto 40px;
   text-align: center;
   display: flex;
+  display: -webkit-flex;
   -ms-align-items: center;
   align-items: center;
 }
@@ -55,12 +54,15 @@
   font-size: 5rem;
 }
 
+.link {
+  margin: 20px 30px;
+  color: black;
+}
+.link:visited {
+  color: black;
+}
 .link:hover {
   text-shadow: 2px 5px 1px orange;
-}
-
-.link {
-  margin: 20px 40px;
 }
 
 /* software developer */
@@ -85,9 +87,13 @@
  * ABOUT POP-UP
  ****************/
 
+hr {
+  margin: 5px 0px;
+}
+
 .abt-section {
   border: 0px dashed red;
-  height: 45vh;
+  height: 100%;
   padding: 0px 20px;
   margin: 40px auto 0px auto;
   background-color: rgba(255,255,255,0.2);
@@ -98,7 +104,6 @@
 
 .abt-title {
   border: 0px dashed red;
-  /*margin: 0px;*/
   padding: 12px;
   color: black;
   font-family: 'Rubik', sans-serif;
@@ -111,8 +116,9 @@
 
 .bs-row {
   /*box-shadow: 1px 1px 1px blue;*/
-  text-align: center;
+  /*text-align: center;*/
   display: flex;
+  display: -webkit-flex;
   /*justify-content: center;*/
 }
 
@@ -121,11 +127,11 @@
   border-radius: 3px;
   background-color: rgba(225, 226, 234,1);
   text-align: left;
-  padding: 20px; /* 0px 10px */;
-  margin: 0px auto; /* 0px 10px */;
+  padding: 30px; /* 0px 10px */;
+  margin: 0px auto 20px auto; /* 0px 10px */;
   font-family: 'Roboto Condensed';
   font-size: 1.75rem;
-  height: 35vh;
+  height: 100%;
   width: 45%;
 }
 
@@ -133,12 +139,25 @@
   letter-spacing: 0.5px;
   font-style: bold;
   padding-left: 5px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
   font-size: 2rem;
-  font-family: 'Archivo Black', sans-serif;
-  font-family: 'Roboto Condensed';
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
   font-family: 'Montserrat', sans-serif;
+}
+
+.skills.abt-col-title {
+}
+
+.skills-list {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.skills-list li {
+  width: 50%;
 }
 
 .portrait-icon {
@@ -148,63 +167,11 @@
   padding: 10px;
 }
 
-/****************
- * MEDIA QUERIES
- ***************/
+/************************
+ * imported font options:
+ ************************/
 
-@media (max-width: 900px), (max-height: 810px) {
-  .header {
-    margin-top: 20px;
-  }
-
-  .bs-row {
-    flex-direction: column;
-  }
-
-  .abt-col {
-    width: 90%;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    height: 45%;
-  }
-
-  .abt-section {
-    height: 100%;
-    /*overflow: scroll;*/
-  }
-
-  .dev-symbol {
-    display: none;
-  }
-}
-
-@media (max-width: 777px), (max-height: 745px) {
-  .link {
-    margin: 20px 20px;
-  }
-
-  .flat-title {
-    font-size: 3rem;
-  }
-
-  .icon-link-heading {
-    font-size: 4rem;
-  }
-
-  .dev-title {
-    display: none;
-    font-size: 2rem;
-  }
-
-  .abt-section {
-    height: 100%;
-    /*overflow: scroll;*/
-  }
-
-}
-
-@media (max-width: 529px), (max-height: 800px){
-  .abt-text {
-    opacity: 0.2;
-  }
-}
+  /*font-family: 'Archivo Black', sans-serif;*/
+  /*font-family: 'Roboto Condensed';*/
+  /*font-family: 'Rubik', sans-serif;*/
+  /*font-family: 'Fira Sans Extra Condensed', sans-serif;*/

@@ -5,6 +5,7 @@ import { Parallax, Background } from 'react-parallax'
 import { Row, Col } from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
 import './FlatParallax.css'
+import './responsive.css'
 import smoothScroll from 'smoothscroll-polyfill'
 
 export default class FlatParallax extends Component {
@@ -23,7 +24,6 @@ export default class FlatParallax extends Component {
     // } else if (window.innerHeight < SET THIS MEDIA BREAKPOINT) {
     //   // scroll only partway
     } else {
-      // document.querySelector('.page-top').scrollIntoView({behavior: 'smooth'})
       window.scrollTo({top: vh, left: 0, behavior: 'smooth'})
     }
     this.setState({ atBottom: !this.state.atBottom })
@@ -37,11 +37,15 @@ export default class FlatParallax extends Component {
           <Parallax strength={300} blur={50}>
             <div className="header-container">
               <header className="header">
-                <h1 className="me flat-title">Nicholas Vanvoorthuysen</h1>
+                <div>
+                  <h1 className="me-title">Nicholas Vanvoorthuysen</h1>
+                </div>
                 {/* <div className="link-container"> */}
                 <h2 className="icon-link-heading">
                   <FontAwesome name="envelope" className="link" />
-                  <FontAwesome name="linkedin-square" className="link" />
+                  <a href="https://www.linkedin.com/in/nicholasvan" className="link">
+                    <i className="fa fa-linkedin-square link"></i>
+                  </a>
                   <FontAwesome name="github" className="link" />
                   {/* <i className="fa fa-github"></i> */}
                 </h2>
@@ -65,17 +69,18 @@ export default class FlatParallax extends Component {
                 <Row className="bs-row">
                   <Col className="left-info abt-col" xs={12} sm={12} md={6}>
                     <img src={portraitIconMD} className="portrait-icon" alt=""/>
+                    <p><strong className="abt-col-title"> Hi! </strong></p>
                     <hr/>
-                    <p><strong className="abt-col-title"> Hi! </strong>
-                    I'm Nick and I'm a software developer. </p>
+                    <p>I'm Nick and I'm a software developer. </p>
                     <p>With a background in engineering and video production,
-                    I am a versatile creator and determined problem-solver in all things media.</p>
-                    <p>I love building interesting user interfaces from sleek, minimal web applications to rich new media experiences. </p>
+                    I am a versatile creator and determined problem-solver, excited and
+                    dedicated to building interesting user interfaces from sleek,
+                    minimal web applications to rich new media experiences. </p>
                     <hr/>
                   </Col>
                   <Col className="skills abt-col" xs={12} sm={12} md={6}>
-                    <strong className="abt-col-title">CURRENT SKILLS:</strong>
-                    <hr/>
+                    <strong className="skills abt-col-title">CURRENT SKILLS:</strong>
+                    <hr style={{ marginTop:5, marginBottom:5 }}/>
                     <ul className="skills-list">
                       <li>Javascript/ES6</li>
                       <li>HTML5</li>
@@ -84,7 +89,7 @@ export default class FlatParallax extends Component {
                       <li>Angular</li>
                       <li>Git & github</li>
                       <li>Node.js</li>
-                      <li></li>
+                      <li>Express.js</li>
                     </ul>
                     <hr/>
                   </Col>
