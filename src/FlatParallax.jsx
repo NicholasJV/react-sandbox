@@ -34,14 +34,14 @@ export default class FlatParallax extends Component {
       <div className="App">
         <div className="page-top"></div>
         {/* <div className="container"> */}
-          <Parallax strength={300} blur={50}>
+          <Parallax strength={400} blur={50}>
             <div className="header-container">
               <header className="header">
                 <div>
                   <h1 className="me-title">Nicholas Vanvoorthuysen</h1>
                 </div>
                 {/* <div className="link-container"> */}
-                <h2 className="icon-link-heading">
+                <h2 className="icon-link-heading around-xs around-md around-lg">
                   <FontAwesome name="envelope" className="link" />
                   <a href="https://www.linkedin.com/in/nicholasvan" className="link">
                     <i className="fa fa-linkedin-square link"></i>
@@ -66,11 +66,11 @@ export default class FlatParallax extends Component {
                 <FontAwesome name="angle-double-down"/>
               </h4>
               {/* <div className="row-wrapper"> */}
-                <Row className="bs-row">
+                <Row className="row center abt">
                   <Col className="left-info abt-col" xs={12} sm={12} md={6}>
                     <img src={portraitIconMD} className="portrait-icon" alt=""/>
                     <p><strong className="abt-col-title"> Hi! </strong></p>
-                    <hr/>
+                    <hr />
                     <p>I'm Nick and I'm a software developer. </p>
                     <p>With a background in engineering and video production,
                     I am a versatile creator and determined problem-solver, excited and
@@ -80,7 +80,7 @@ export default class FlatParallax extends Component {
                   </Col>
                   <Col className="skills abt-col" xs={12} sm={12} md={6}>
                     <strong className="skills abt-col-title">CURRENT SKILLS:</strong>
-                    <hr style={{ marginTop:5, marginBottom:5 }}/>
+                    <hr />
                     <ul className="skills-list">
                       <li>Javascript/ES6</li>
                       <li>HTML5</li>
